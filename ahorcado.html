@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+        <meta http-equiv="X-UA-compatible" content="ie=edge">
+        <title>Ahorcado en linea</title>
+        <link rel="stylesheet" href="formato.css">
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100&display=swap">
+    </head>
+    
+    <Body>
+        <img src="logos/Vector.png" class="logo">
+        <div id="div-desaparece" class="boton-home">
+            <a href="#forca">
+                <!-- Boton -->
+                <input class="btn-iniciar" type="submit" value="Iniciar Juego" id="iniciar-juego" onclick="iniciarJuego()">
+            </a>
+        </div>
+        <div id="div-aparece-ahorcado" class="canvas">
+            <!-- Canvas -->
+            <canvas id="forca" width="1200" height="860"></canvas>
+            <div class="subrayado">
+            </div>
+        </div>
+        <!-- Java -->
+        <script src="ahorca.js"></script>
+        <script src="canvas.js"></script> 
+    </Body>
+    
+</html>
